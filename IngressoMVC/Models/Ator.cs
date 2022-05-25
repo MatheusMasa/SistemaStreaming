@@ -9,6 +9,10 @@ namespace IngressoMVC.Models
 {
     public class Ator : Artista
     {
+        public Ator(int id, string nome, string bio, string fotoPerfilURL) : base(id, nome, bio, fotoPerfilURL)
+        {
+        }
+
         public List<AtorFilme> AtoresFilmes { get; set; }
     }
 }
